@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>R1ntax</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video autoplay muted loop id="bgVideo">
+  <source src="media/background.mp4" type="video/mp4">
+</video>
+
+<div id="container">
+  <h1>R1ntax</h1>
+
+  <button id="loginBtn">Sign in with Google</button>
+
+  <div id="menu" style="display:none;">
+    <button id="playBtn">🧠 Spielen</button>
+    <button id="duelBtn">⚔️ Duell</button>
+    <button id="customBtn">✏️ Eigene Wörter</button>
+  </div>
+
+  <div id="gameArea" style="display:none;">
+    <div id="wordCard"></div>
+    <div id="options"></div>
+  </div>
+
+  <div id="customArea" style="display:none;">
+    <h3>Eigene Wörter hinzufügen</h3>
+    <input type="text" id="germanWord" placeholder="Deutsch">
+    <input type="text" id="translationWord" placeholder="Übersetzung">
+    <button id="addCustomBtn">Hinzufügen</button>
+    <div id="customList"></div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
